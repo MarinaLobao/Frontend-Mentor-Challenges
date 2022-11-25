@@ -1,0 +1,142 @@
+  body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+}
+
+.card {
+  background-color: #FFFFFF;
+  max-width: 465px;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 8px
+}
+
+.card-conteudo {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1.5rem;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0 8px;
+}
+
+.card-plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.8rem;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center; */
+  text-align: left;
+
+  padding: 1rem;
+  margin: 8px 0;
+}
+
+.plan {
+  display: flex;
+  align-items: center;  
+}
+.plan-icon {
+  padding-right: 1rem;
+}
+
+
+.plan-title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+}
+
+.button-third {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.button-third:hover {
+  color: hsl(245, 75%, 72%);
+  text-decoration: none;
+}
+
+.button-first {
+  background-color: hsl(245, 75%, 52%);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.93rem;
+  padding: 15px;
+  border-radius: 0.8rem;
+  margin: 16px 0;
+  box-shadow: 0 15px 30px hsla(245, 75%, 52%, .25);
+  transition: all 1s
+}
+
+.button-first:hover {
+  background-color: hsl(245, 75%, 72%);
+  cursor: pointer;
+}
+
+.button-second {
+  font-size: .95rem;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  margin: 16px 0 0 0;
+}
+
+.button-second:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+
+
+@media  screen and (min-width:1440px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
