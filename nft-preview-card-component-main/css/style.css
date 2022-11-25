@@ -1,0 +1,139 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 101vh;
+}
+
+.card {
+  max-width: 275px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  align-items: center;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  grid-column: span 2;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+
+.overlay:hover {
+  background-color: hsl(178, 100%, 50%, 0.5);
+  opacity: 1;
+}
+
+.icon-overlay {
+  position: absolute;
+  width: 45px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #FFF;
+  grid-column: span 2;
+}
+
+.card-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.card-desc {
+  font-size: .99rem;
+  font-weight: 300;
+  line-height: 1.6rem;
+  grid-column: span 2;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+  font-weight: 600;
+  color:  hsl(178, 100%, 50%);
+}
+
+.price::before{
+  content: url("../images/icon-ethereum.svg");
+  padding-right: .5rem;
+}
+
+.days {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  font-size: .9rem;
+}
+
+.days::before{
+  content: url("../images/icon-clock.svg");
+  padding-right: .5rem;
+  
+}
+
+.divider {
+  grid-column: span 2;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+  grid-column: span 2;
+}
+
+.credits::before{
+  content: "";
+  background-image: url(../images/image-avatar.png);
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #FFF;
+  margin-right: 1rem;
+}
+
+.link-profile {
+  color:  #fff;
+  margin: .2rem;
+}
+
+.link-profile:hover {
+  color:  hsl(178, 100%, 50%);
+  cursor: pointer;
+}
