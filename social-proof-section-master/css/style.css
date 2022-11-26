@@ -1,0 +1,235 @@
+body {
+  min-height: 100vh;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  background-position: 0 0, left 0 bottom 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+  padding: 5rem 1.5rem 2rem 1.5rem;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  body{
+    padding: 8vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body{
+  }
+}
+
+.all {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas: 
+  "intro"
+  "rating"
+  "depoimentos";
+}
+
+.intro {
+  grid-area: intro;
+  padding-top: .2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem
+}
+
+.desc {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: -0.02rem;
+  font-weight: 500;
+  color: hsl(303, 10%, 53%);
+  margin-bottom:1rem;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
+  margin-bottom: 2rem;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin: 1rem 0 0 0;
+}
+
+.stars {
+  background-image: url(../images/icon-star.svg), url(../images/icon-star.svg), url(../images/icon-star.svg), url(../images/icon-star.svg), url(../images/icon-star.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: 0 0 , 22px 0px, 45px 0px, 68px 0px, 91px 0px;
+  background-size: 1rem;
+  height: 1rem;
+  width: 6.625rem;
+  }
+
+.rate_title{
+  font-weight: 700;
+  margin-top: .5rem;
+}
+
+.depoimentos {
+  margin-bottom: 3rem;
+}
+
+.card {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(300, 43%, 22%);
+  text-align: left;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: .5rem;
+  line-height: 1.3rem;
+}
+
+.user {
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.user-avatar{
+  width: 40px;
+  height: 40px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin-right: 1.3rem;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.colton .user-avatar {
+  background-image: url(../images/image-colton.jpg);
+}
+
+.irene .user-avatar {
+    background-image: url(../images/image-irene.jpg);
+  }
+
+  .anne .user-avatar {
+  background-image: url(../images/image-anne.jpg);
+}
+
+
+
+.user-name {
+  font-weight: 700;
+  letter-spacing: .03rem;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+  letter-spacing: .03rem;
+}
+
+.comment:before {
+  content: '"';
+}
+
+.comment:after {
+  content: ' "';
+}
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    text-align: left;
+    /* padding:  9vw 9vw 3rem 9vw; */
+    /* height: 100vh; */
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% , 50%;
+    background-position: 0 0, right 0 bottom 0;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .all {
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "intro rating"
+      "depoimentos depoimentos";
+    margin-bottom: 3rem;
+    max-width: 1200px;
+  }
+
+  .rating {
+    /* justify-content: center; */
+    align-items: flex-end;
+    margin-bottom: 0;
+    padding: 0 0 0 1rem;
+  }
+
+  .rate {
+    flex-direction: row;
+    margin: .5rem 0;
+    width: 70%;
+    /* max-width: 400px; */
+  }
+
+  .rate.review {
+    transform: translateX(-30%);
+  }
+
+  .rate.report-guru{
+    transform: translateX(-15%);
+  }
+
+  .depoimentos {
+    grid-area: depoimentos;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin: 3rem 0 0 0;
+  }
+
+  .card{
+    padding: 1.5rem;
+    margin: 0 1rem 0;
+  }
+
+  .card.colton {
+    margin-left: 0;
+  }
+
+  .card.anne {
+    margin-right: 0;
+  }
+
+}
+
+
+
+
+/* .all {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "intro rating"
+    "testimonials testimonials";
+    
+} */
