@@ -19,3 +19,6 @@ Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/nft-pr
 
 ## [Social proof section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
 Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/social-proof-section-master/)
+
+## [Single price grid component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
+Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/single-price-grid-component-master)
