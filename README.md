@@ -22,3 +22,9 @@ Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/social
 
 ## [Single price grid component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
 Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/single-price-grid-component-master)
+
+## [Four card feature section](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK)
+Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/four-card-feature-section-master)
+
+## [Huddle landing page with a single introductory section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
+Solução [aqui](https://marinalobao.github.io/Frontend-Mentor-Challenges/huddle-landing-page-with-single-introductory-section-master)
