@@ -1,0 +1,180 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+  background-color: hsl(0, 0%, 98%);
+  padding: 4rem 2rem;
+  text-align: center;
+  
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+.cima {
+  margin-bottom: 4rem;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding: 0 0 1.1rem 0;
+  
+}
+
+.title.negrito {
+  font-weight: 600;
+}
+
+.desc {
+  font-size: .95rem;
+  letter-spacing: .02rem;
+  line-height: 1.5rem;
+  color: hsl(229, 6%, 66%);
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+}
+
+.card {
+  height: 190px;
+  border-radius: .5rem;
+  box-shadow: 0 10px 15px 2px hsla(234, 12%, 34%, .25);
+  margin: 0.75rem 0;
+  text-align: left ;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: 
+    "card-title"
+    "card-desc"
+    "img";
+  max-width: 295px;
+}
+
+.supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-bottom: 0.6rem;
+  grid-area: card-title;
+}
+
+.card-desc {
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: hsl(229, 6%, 66%);
+  grid-area: card-desc;
+}
+
+.img {
+  grid-area: img;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
+}
+
+.supervisor .img {
+  background-image: url(../images/icon-supervisor.svg);
+}
+
+.team-builder .img {
+  background-image: url(../images/icon-team-builder.svg);
+}
+
+.karma .img {
+  background-image: url(../images/icon-karma.svg);
+}
+
+.calculator .img {
+  background-image: url(../images/icon-calculator.svg);
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+  body {
+  padding: 0;
+  text-align: center;
+}
+
+main {
+  width: 1110px;
+  margin: 0 auto 2rem;
+}
+
+.cima {
+  width: 550px;
+  margin: 4rem auto;
+
+}
+.title {
+  font-size: 2.3rem;  
+}
+
+.desc {
+  padding-top: .7rem;
+}
+
+.card {
+  margin: 0;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+
+.supervisor {
+  /* grid-area: supervisor; */
+  grid-column: 1;
+  grid-row: span 4;
+}
+
+.team-builder {
+  /* grid-area: teambuilder; */
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.karma {
+  /* grid-area: karma; */
+  grid-column: 2;
+  grid-row: 3 / span 2;
+}
+
+.calculator {
+  /* grid-area: calculator; */
+  grid-column: 3;
+  grid-row: span 4;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+
+}
