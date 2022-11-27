@@ -1,0 +1,140 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  border-radius: .3rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin: 4rem 2rem;
+}
+
+.grid div {
+  padding: 1.5rem;
+  
+}
+
+.title {
+  font-size: 1.2rem;
+  letter-spacing: .02rem;
+  padding-bottom: 1.5rem;
+}
+
+.chamada {
+  background-color: white;
+}
+
+.chamada_titulo {
+  font-size: 1.2rem;
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 1.5rem;
+}
+
+.chamada_subtitulo {
+  font-size: .95rem;
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 1.5rem;
+}
+
+.chamada_info {
+  font-size: .85rem;
+  line-height: 1.5rem;
+  letter-spacing: .003rem;
+  color: hsl(218, 22%, 67%);
+}
+
+.price-section {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.price-title {
+  opacity: .9;  
+}
+
+.price {
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: .8rem;
+  
+}
+
+.price span {
+  font-size: .95rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  opacity: .5;
+  padding-left: .8rem;
+}
+
+.price-text {
+  font-size: .95rem;
+  letter-spacing: 0.01rem;
+  opacity: .9;
+  padding-bottom: 2rem;
+}
+
+.sign {
+  background-color: hsl(71, 73%, 54%);
+  border-radius: .5rem;
+  padding: 1rem 1rem;
+  width: 100%;
+  box-shadow: 0 10px 10px hsla(179, 64%, 23%, 0.63);
+}
+
+.why {
+  background-color: hsl(179, 62%, 43%, 0.8);
+}
+
+.why-list {
+  opacity: .8;
+  font-size: .8rem;
+  letter-spacing: .04rem;
+  font-weight: 400;
+}
+
+.list-item {
+  padding-bottom: .5rem;
+}
+
+.list-item:last-child {
+  padding-bottom: 0;  
+}
+footer {
+  margin-bottom: 2rem
+}
+.attribution { font-size: 11px; text-align: center; color: hsl(218, 22%, 67%);}
+.attribution a { color: hsl(179, 62%, 43%); font-weight: 700;}
+
+@media screen and (min-width:768px) {
+  .grid {
+    width: 638px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    /* margin: auto auto 2rem auto; */
+    box-shadow: 0 10px 30px hsla(179, 64%, 23%, 0.3);
+  }
+
+  .chamada {
+    grid-column: span 2;
+  }
+
+  .chamada_titulo {
+    font-size: 2rem;
+  }
+  
+}
